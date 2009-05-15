@@ -17,9 +17,9 @@ class NiftyLayoutGenerator < Rails::Generator::Base
       else
         m.template "layout.html.erb", "app/views/layouts/#{file_name}.html.erb"
         m.file     "stylesheet.css",  "public/stylesheets/#{file_name}.css"
-        m.file     "iupui.css", "public/stylesheets/#{file_name}.css"
-        m.file     "iu_crimson.gif", "public/images/#{file_name}.gif"
-        m.file     "iupui-footer.gif", "public/images/#{file_name}.gif"
+        m.file     "iupui.css", "public/stylesheets/iupui.css"
+        m.file     "iu_crimson.gif", "public/images/iu_crimson.gif"
+        m.file     "iupui-footer.gif", "public/images/iupui-footer.gif"
       end
       m.file "helper.rb", "app/helpers/layout_helper.rb"
     end
