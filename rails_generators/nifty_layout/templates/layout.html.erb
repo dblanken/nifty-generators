@@ -2,30 +2,30 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title><%= h(yield(:title) || "Untitled") %></title>
-    <%= stylesheet_link_tag 'application', 'iupui' %>
-    <%= yield(:head) %>
+    <title><%%= h(yield(:title) || "Untitled") %></title>
+    <%%= stylesheet_link_tag '<%= file_name %>', 'iupui' %>
+    <%%= yield(:head) %>
   </head>
   <body>
-		<%= image_tag 'iu_crimson.gif', :id => "header-image" %>
+		<%%= image_tag 'iu_crimson.gif', :id => "header-image" %>
     <div id="container">
-      <%- flash.each do |name, msg| -%>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      <%- end -%>
+      <%%- flash.each do |name, msg| -%>
+        <%%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%%- end -%>
       
-      <%- if show_title? -%>
-        <h1><%=h yield(:title) %></h1>
-      <%- end -%>
+      <%%- if show_title? -%>
+        <h1><%%=h yield(:title) %></h1>
+      <%%- end -%>
       
 			<div id="menu">
-				<%= yield(:menu) %>
+				<%%= yield(:menu) %>
 			</div>
 			
-      <%= yield %>
+      <%%= yield %>
 
     </div>
 		<div id="footer">
-			<%= image_tag 'iupui-footer.gif' %>
+			<%%= image_tag 'iupui-footer.gif' %>
 			<a href="http://www.iupui.edu">Indiana University-Purdue University Indianapolis</a>
 			,
 			<a href="http://www.indiana.edu/comments/copyright.shtml">Copyright</a>
