@@ -1,16 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-	<title><%= h(yield(:title) || "Untitled") %></title>
-	<meta name="Keywords" content="<%= h(yield(:keywords) || "IU, Indiana University") %>" />
-	<meta name="Description" content="<%= h(yield(:description) || "Description goes here.") %>" />
+	<title><%%= h(yield(:title) || "Untitled") %></title>
+	<meta name="Keywords" content="<%%= h(yield(:keywords) || "IU, Indiana University") %>" />
+	<meta name="Description" content="<%%= h(yield(:description) || "Description goes here.") %>" />
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<link rel="icon" href="http://www.indiana.edu/favicon.ico" />
 	<link rel="shortcut icon" href="http://www.indiana.edu/favicon.ico" />
-	<%= stylesheet_link_tag 'styles', 'rails', 'application' %>
-	<%= stylesheet_link_tag 'print', :media => :print %>
-	<%= javascript_include_tag :defaults %>
-  <%= yield(:head) %>
+	<%%= stylesheet_link_tag 'styles', 'rails', 'application' %>
+	<%%= stylesheet_link_tag 'print', :media => :print %>
+	<%%= javascript_include_tag :defaults %>
+  <%%= yield(:head) %>
   
 
 <!-- BEGIN INDIANA UNIVERSITY BRANDING BAR AND FOOTER STYLES -->
@@ -33,7 +33,7 @@
 
 <div id="identity">
 	<div id="signature">
-		<a href="http://www.iu.edu/" class="iu"><%= image_tag 'iu_white.gif', :alt => "Indiana University", :size => "171x44" %></a>	
+		<a href="http://www.iu.edu/" class="iu"><%%= image_tag 'iu_white.gif', :alt => "Indiana University", :size => "171x44" %></a>	
     </div>
  	<hr />
 </div>
@@ -43,19 +43,19 @@
 
 <div id="content">
 	<a id="skip"></a>
-	<%- flash.each do |name, msg| -%>
-    <%= content_tag :div, msg, :id => "flash_#{name}" %>
-  <%- end -%>
+	<%%- flash.each do |name, msg| -%>
+    <%%= content_tag :div, msg, :id => "flash_#{name}" %>
+  <%%- end -%>
   
-  <%- if show_title? -%>
-    <h1><%=h yield(:title) %></h1>
-  <%- end -%>
+  <%%- if show_title? -%>
+    <h1><%%=h yield(:title) %></h1>
+  <%%- end -%>
   
 	<div id="menu" class="do_not_print">
-		<%= yield(:menu) %>
+		<%%= yield(:menu) %>
 	</div>
 	
-  <%= yield %>
+  <%%= yield %>
   
 </div>
 
@@ -65,7 +65,7 @@
 <div id="footer">
 	<hr />
 	<div id="copyright">
-		<p><a href="http://www.iu.edu/" title="Indiana University" id="blockiu"><%= image_tag 'blockiu_white.gif', :alt => "Block IU", :size => "22x28" %></a><a href="http://www.iu.edu/comments/copyright.shtml">Copyright</a> &copy; 2008 The Trustees of <a href="http://www.indiana.edu/">Indiana University</a> &#124; <a href="http://www.indiana.edu/comments/complaint.shtml">Copyright Complaints</a></p>
+		<p><a href="http://www.iu.edu/" title="Indiana University" id="blockiu"><%%= image_tag 'blockiu_white.gif', :alt => "Block IU", :size => "22x28" %></a><a href="http://www.iu.edu/comments/copyright.shtml">Copyright</a> &copy; 2008 The Trustees of <a href="http://www.indiana.edu/">Indiana University</a> &#124; <a href="http://www.indiana.edu/comments/complaint.shtml">Copyright Complaints</a></p>
   	</div>
 </div>
 
