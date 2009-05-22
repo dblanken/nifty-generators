@@ -22,6 +22,7 @@ class NiftyLayoutGenerator < Rails::Generator::Base
         m.file     "screen.css", "public/stylesheets/screen.css"
         m.file     "styles.css", "public/stylesheets/styles.css"
         m.file     "ie6.css", "public/stylesheets/ie6.css"
+        m.file     "rails.css", "public/stylesheets/rails.css"
         # images
         m.file     "iu_crimson.gif", "public/images/iu_crimson.gif"
         m.file     "iupui-footer.gif", "public/images/iupui-footer.gif"
