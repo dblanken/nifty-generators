@@ -17,8 +17,8 @@ module Nifty
           copy_file 'print.css', "public/stylesheets/print.css"
           copy_file "screen.css", "public/stylesheets/screen.css"
           copy_file "styles.css", "public/stylesheets/styles.css"
-          copy_file "ie6.css", "public/stylesheet/ie6.css"
-          copy_file "rails.css", "public/stylesheet/rails.css"
+          copy_file "ie6.css", "public/stylesheets/ie6.css"
+          copy_file "rails.css", "public/stylesheets/rails.css"
           
           copy_file "iu_crimson.gif", "public/images/iu_crimson.gif"
           copy_file "iupui-footer.gif", "public/images/iupui-footer.gif"
