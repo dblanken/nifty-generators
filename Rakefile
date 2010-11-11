@@ -1,5 +1,15 @@
 require 'rubygems'
 require 'rake'
+require 'cucumber'
+require 'cucumber/rake/task'
+
+Cucumber::Rake::Task.new(:features) do |t|
+  t.cucumber_opts = "features --format progress"
+end
+
+task :default => :features
+require 'rubygems'
+require 'rake'
 require 'echoe'
 
 Echoe.new('nifty-generators', '0.2.4iupui') do |p|
@@ -13,3 +23,4 @@ Echoe.new('nifty-generators', '0.2.4iupui') do |p|
 end
 
 Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
+
