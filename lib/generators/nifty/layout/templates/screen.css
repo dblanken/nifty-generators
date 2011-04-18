@@ -1,0 +1,294 @@
+/***************************************** 
+ * Author: IU Office of Creative Services
+ *
+ * CSS for screen delivery
+ * 
+ * The function of this stylesheet is to 
+ * control the layout and formatting of 
+ * the branding bar and footer.
+ * 
+ * Except for the exceptions stated in 
+ * the README.txt document, none of the 
+ * styles in this document should be 
+ * modified.
+ * 
+ * At the end of this document are 
+ * commented (i.e.: optional) styles that
+ * you can enable to further control the
+ * appearance of the IU branding bar and
+ * footer.
+ ****************************************/
+ 
+ 
+/****************************************
+ * General Formatting
+ ****************************************/
+
+body {
+	background: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+img {
+	border: 0;
+	display: block;
+}
+
+/****************************************
+ * Skip Navigation Container
+ ****************************************/
+
+#skipnav {
+	left: -9999em;
+	position: absolute;
+	top: -9999em;
+}
+#skipnav hr {
+	display: none;
+}
+
+/****************************************
+ * Branding Bar
+ ****************************************/
+
+#identity {
+	background-color: #7d110c;
+	color: #fff;
+	font-size: 0.625em; /* 10px */
+	height: 44px;
+	line-height: 1em; /* 10px */
+	width: auto;
+}
+#identity a {
+	color: #fff;
+	text-decoration: underline;
+}
+#identity hr {
+	display: none;
+}
+#identity #signature {
+	height: 44px;
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+	width: 760px;
+}
+#identity #signature a.iu {
+	background: url(../images/iu_crimson.gif) no-repeat 20px 0;
+	display: block;
+	height: 44px;
+	left: -20px;
+	position: relative;
+	top: 0;
+	width: 250px;
+}
+#identity #signature a.iu img {
+	display: none;
+}
+
+/* PLEASE NOTE: The rest of the styles in this section ("Branding Bar")
+   can be removed if the optional search function will not be used. */
+
+/* Search Form */
+/*
+#identity form {
+	height: 44px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#identity fieldset {
+	border: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+*/
+/* Fieldset 1 */
+
+#identity fieldset#set1 {
+	left: 0;
+	position: relative;
+	top: 17px;
+}
+#identity ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#identity li {
+	float: left;
+	margin: 0 10px 0 0; 
+}
+#identity input#search1, #identity input#search2 {
+	left: 0;
+	float: left;
+	height: 13px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -2px;
+	width: 13px;
+}
+
+/* Fieldset 2 */
+
+#identity fieldset#set2 {
+	left: 2px;
+	position: relative;
+	top: 12px;
+}
+#identity #searchtxt {
+	border: 1px solid #c59d9a;
+	color: #616364;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em; /* 10px */
+	height: 1.500em; /* 15px */
+	line-height: 1.100em; /* 11px */
+	margin: 0 6px 0 0;
+	min-height: 13px;
+	padding: 2px 4px 0 4px;
+	width: 9.300em; /* 93px */
+}
+#identity #go {
+	margin: 1px 0 0 0;
+}
+
+
+/****************************************
+ * Footer
+ ****************************************/
+
+#footer {
+	margin: 15px 0 0 0;
+	width: auto;
+}
+#footer hr {
+	display: none;
+}
+#footer #copyright {
+	font-size: 0.688em; /* 11px */
+	line-height: 1.364em; /* 15px */
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+	width: 760px;
+}
+#footer #copyright a {
+	color: #900;
+	text-decoration: none;
+}
+#footer #copyright a:hover {
+	text-decoration: underline;
+}
+#footer #copyright p {
+	margin: 0;
+	padding: 7px 0 0 8px;
+}
+#footer #copyright #blockiu {
+	background: url(../images/blockiu_white.gif) no-repeat;
+	display: block;
+	float: left;
+	height: 28px;
+	left: -8px;
+	position: relative;
+	top: -7px;
+	width: 22px;
+}
+#footer #copyright #blockiu img {
+	display: none;
+}	
+
+
+/****************************************
+ * Commented (Optional) Styles
+ ****************************************/
+
+
+/****************************************
+ * Alternate White Branding Bar
+ *
+ * Uncomment this section to switch to a
+ * multicolor (crimson and black) signature 
+ * with a white background and bar.
+ ****************************************
+
+#identity {
+	background-color: #fff;
+	color: #000;
+}
+#identity a {
+	color: #000;
+}
+#identity #signature a.iu {
+	background: url(../images/iu_white.gif) no-repeat 20px 0;
+}
+#identity #searchtxt {
+	border: 1px solid #848484;
+}
+
+*/
+
+
+/****************************************
+ * Alternate White Footer
+ *
+ * Uncomment this section to switch to a
+ * white block IU, text, and links in the
+ * IU footer. This should only be used 
+ * on pages with a black background 
+ * color (HEX: #000000). 
+ *
+ * If your background color is IU crimson 
+ * (HEX: #7d110c), change the image
+ * referenced below 
+ * to ../img/blockiu_crimson.gif.
+ *
+ * Otherwise, you should create a new
+ * Web-optimized Block IU graphic from the 
+ * Photoshop file (../img/blockiu.psd).
+ ****************************************
+
+#footer {
+	color: #fff;
+}
+#footer #copyright a {
+	color: #fff;
+	text-decoration: underline;
+}
+#footer #copyright #blockiu {
+	background: url(../img/blockiu_black.gif) no-repeat;
+}
+
+*/
+
+
+ /****************************************
+ * Fluid Format
+ *
+ * Uncomment this section to give the 
+ * Web site a fluid width.
+ ****************************************
+*/
+body {
+	text-align: left;
+}
+#identity #signature {
+	padding: 0 0 0 15px;
+	width: auto;
+}
+#identity form {
+	right: 15px;
+}
+#content {
+	padding: 0 0 0 15px;
+	width: auto;
+}
+#footer #copyright {
+	padding: 0 0 0 15px;
+	width: auto;
+}

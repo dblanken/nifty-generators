@@ -17,6 +17,18 @@ module Nifty
         end
         copy_file 'layout_helper.rb', 'app/helpers/layout_helper.rb'
         copy_file 'error_messages_helper.rb', 'app/helpers/error_messages_helper.rb'
+        # stylesheets
+        copy_file     "stylesheet.css",  "public/stylesheets/#{file_name}.css"
+        copy_file     "print.css", "public/stylesheets/print.css"
+        copy_file     "screen.css", "public/stylesheets/screen.css"
+        copy_file     "styles.css", "public/stylesheets/styles.css"
+        copy_file     "ie6.css", "public/stylesheets/ie6.css"
+        copy_file     "rails.css", "public/stylesheets/rails.css"
+        # images
+        copy_file    "iu_crimson.gif", "public/images/iu_crimson.gif"
+        copy_file    "iupui-footer.gif", "public/images/iupui-footer.gif"
+        copy_file    "iu_white.gif", "public/images/iu_white.gif"
+        copy_file    "blockiu_white.gif", "public/images/blockiu_white.gif"
       end
 
       private
